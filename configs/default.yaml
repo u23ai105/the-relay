@@ -1,0 +1,20 @@
+project:
+  name: "the-relay"
+  random_seed: 42
+
+provider:
+  real_base_url: "https://api.groq.com/openai/v1"
+  standin_base_url: "http://127.0.0.1:8001/openai/v1"
+  default_model: "openai/gpt-oss-20b"
+
+corpus:
+  papers:
+    - id: "1706.03762"
+      version: "v7"
+      title: "Attention Is All You Need"
+    - id: "2410.00037"
+      version: "v1"
+      title: "Moshi: a speech-text foundation model for real-time dialogue"
+    - id: "2507.07955"
+      version: "v2"
+      title: "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling"
