@@ -6,6 +6,20 @@ provider:
   real_base_url: "https://api.groq.com/openai/v1"
   standin_base_url: "http://127.0.0.1:8001/openai/v1"
   default_model: "openai/gpt-oss-20b"
+  temperature: 0.0
+  max_generation_tokens: 1500
+  max_verification_tokens: 400
+  connect_timeout_s: 10.0
+  ttft_timeout_s: 15.0
+  inter_chunk_timeout_s: 8.0
+  per_call_timeout_s: 30.0
+  request_deadline_ms: 45000.0
+  max_transport_retries: 2
+  retry_base_delay_ms: 400.0
+  retry_max_delay_ms: 4000.0
+  # Reference paid-tier pricing for openai/gpt-oss-20b on Groq (\$0.10/1M in, \$0.50/1M out)
+  reference_price_per_1m_input_usd: 0.10
+  reference_price_per_1m_output_usd: 0.50
 
 corpus:
   papers:
@@ -18,3 +32,52 @@ corpus:
     - id: "2507.07955"
       version: "v2"
       title: "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling"
+
+chunking:
+  boundary_context_tokens: 45
+  min_section_Break_tokens: 40
+  sizes:
+    - 250
+    - 500
+
+retrieval:
+  default_setting: "500tok_12to4_rerank_yes"
+  rrf_k: 60
+  # "lightweight" uses fast SVD/char+word-ngram L2 dense embeddings & interaction reranker (<25MB RAM).
+  # Set to "sentence_transformers" to use HuggingFace bi-encoder/cross-encoder when installed.
+  dense_backend: "lightweight"
+  reranker_backend: "lightweight"
+  sentence_transformer_model: "sentence-transformers/all-MiniLM-L6-v2"
+  cross_encoder_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  evidence_min_lexical_overlap: 0.12
+  evidence_expansion_threshold: 0.32
+  settings:
+    250tok_4to4_rerank_no:
+      chunk_size_tokens: 250
+      candidates_fetched: 4
+      pieces_passed: 4
+      rerank_enabled: false
+      retrieval_method: "hybrid_rrf"
+    500tok_4to4_rerank_no:
+      chunk_size_tokens: 500
+      candidates_fetched: 4
+      pieces_passed: 4
+      rerank_enabled: false
+      retrieval_method: "hybrid_rrf"
+    500tok_12to4_rerank_yes:
+      chunk_size_tokens: 500
+      candidates_fetched: 12
+      pieces_passed: 4
+      rerank_enabled: true
+      retrieval_method: "hybrid_rrf"
+    500tok_12to2_rerank_yes:
+      chunk_size_tokens: 500
+      candidates_fetched: 12
+      pieces_passed: 2
+      rerank_enabled: true
+      retrieval_method: "hybrid_rrf"
+
+pipeline:
+  enable_cache: false
+  max_correction_attempts: 1
+  stream_chunk_chars: 48
