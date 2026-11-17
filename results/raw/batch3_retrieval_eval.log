@@ -1,0 +1,11 @@
+{"timestamp": "2026-11-13T09:09:26.313Z", "level": "INFO", "logger": "retrieval_eval", "message": "Initializing and warming up retrieval engines..."}
+{"timestamp": "2026-11-13T09:09:26.887Z", "level": "INFO", "logger": "retrieval_eval", "message": "Engines warmed up successfully."}
+{"timestamp": "2026-11-13T09:09:26.887Z", "level": "INFO", "logger": "retrieval_eval", "message": "Evaluating Setting: 250tok_4to4_rerank_no"}
+{"timestamp": "2026-11-13T09:09:26.912Z", "level": "INFO", "logger": "retrieval_eval", "message": "Completed 250tok_4to4_rerank_no - Combined Median Latency: 0.89 ms, Retrieved Tokens: 834.7"}
+{"timestamp": "2026-11-13T09:09:26.912Z", "level": "INFO", "logger": "retrieval_eval", "message": "Evaluating Setting: 500tok_4to4_rerank_no"}
+{"timestamp": "2026-11-13T09:09:26.932Z", "level": "INFO", "logger": "retrieval_eval", "message": "Completed 500tok_4to4_rerank_no - Combined Median Latency: 0.55 ms, Retrieved Tokens: 1644.4"}
+{"timestamp": "2026-11-13T09:09:26.932Z", "level": "INFO", "logger": "retrieval_eval", "message": "Evaluating Setting: 500tok_12to4_rerank_yes"}
+{"timestamp": "2026-11-13T09:09:26.988Z", "level": "INFO", "logger": "retrieval_eval", "message": "Completed 500tok_12to4_rerank_yes - Combined Median Latency: 2.48 ms, Retrieved Tokens: 1758.5"}
+{"timestamp": "2026-11-13T09:09:26.988Z", "level": "INFO", "logger": "retrieval_eval", "message": "Evaluating Setting: 500tok_12to2_rerank_yes"}
+{"timestamp": "2026-11-13T09:09:27.039Z", "level": "INFO", "logger": "retrieval_eval", "message": "Completed 500tok_12to2_rerank_yes - Combined Median Latency: 2.41 ms, Retrieved Tokens: 891.1"}
+{"timestamp": "2026-11-13T09:09:27.040Z", "level": "INFO", "logger": "retrieval_eval", "message": "Offline retrieval evaluation saved to /Users/muzammilmohammad/Projects/the-relay/results/raw/retrieval_offline_eval_report.json"}

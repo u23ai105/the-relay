@@ -1,0 +1,106 @@
+{
+  "250tok_4to4_rerank_no": {
+    "setting": "250tok_4to4_rerank_no",
+    "reranker_backend_used": "None",
+    "questions_evaluated": 18,
+    "avg_retrieved_evidence_tokens": 834.7,
+    "top_1_passage_recall": "8/12",
+    "top_k_passage_recall": "11/12",
+    "diagnostic_deterministic_refusal_rate": "1/6",
+    "latency_ms": {
+      "retrieval": {
+        "mean": 1.07,
+        "median": 0.89,
+        "p95": 2.18
+      },
+      "reranking": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0
+      },
+      "combined": {
+        "mean": 1.07,
+        "median": 0.89,
+        "p95": 2.18
+      }
+    }
+  },
+  "500tok_4to4_rerank_no": {
+    "setting": "500tok_4to4_rerank_no",
+    "reranker_backend_used": "None",
+    "questions_evaluated": 18,
+    "avg_retrieved_evidence_tokens": 1644.4,
+    "top_1_passage_recall": "9/12",
+    "top_k_passage_recall": "12/12",
+    "diagnostic_deterministic_refusal_rate": "1/6",
+    "latency_ms": {
+      "retrieval": {
+        "mean": 0.62,
+        "median": 0.55,
+        "p95": 1.35
+      },
+      "reranking": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0
+      },
+      "combined": {
+        "mean": 0.62,
+        "median": 0.55,
+        "p95": 1.35
+      }
+    }
+  },
+  "500tok_12to4_rerank_yes": {
+    "setting": "500tok_12to4_rerank_yes",
+    "reranker_backend_used": "Lightweight Heuristic Reranker",
+    "questions_evaluated": 18,
+    "avg_retrieved_evidence_tokens": 1758.5,
+    "top_1_passage_recall": "9/12",
+    "top_k_passage_recall": "12/12",
+    "diagnostic_deterministic_refusal_rate": "1/6",
+    "latency_ms": {
+      "retrieval": {
+        "mean": 0.65,
+        "median": 0.57,
+        "p95": 1.4
+      },
+      "reranking": {
+        "mean": 1.98,
+        "median": 1.9,
+        "p95": 4.26
+      },
+      "combined": {
+        "mean": 2.62,
+        "median": 2.48,
+        "p95": 5.66
+      }
+    }
+  },
+  "500tok_12to2_rerank_yes": {
+    "setting": "500tok_12to2_rerank_yes",
+    "reranker_backend_used": "Lightweight Heuristic Reranker",
+    "questions_evaluated": 18,
+    "avg_retrieved_evidence_tokens": 891.1,
+    "top_1_passage_recall": "9/12",
+    "top_k_passage_recall": "9/12",
+    "diagnostic_deterministic_refusal_rate": "1/6",
+    "latency_ms": {
+      "retrieval": {
+        "mean": 0.61,
+        "median": 0.56,
+        "p95": 1.36
+      },
+      "reranking": {
+        "mean": 1.95,
+        "median": 1.87,
+        "p95": 4.06
+      },
+      "combined": {
+        "mean": 2.55,
+        "median": 2.41,
+        "p95": 5.42
+      }
+    }
+  }
+}

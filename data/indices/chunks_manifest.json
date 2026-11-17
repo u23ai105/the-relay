@@ -1,0 +1,37 @@
+{
+  "source_pages_jsonl": "/Users/muzammilmohammad/Projects/the-relay/data/indices/extracted_pages.jsonl",
+  "total_source_pages": 120,
+  "boundary_context_tokens": 45,
+  "configurations": {
+    "250": {
+      "chunk_size_target": 250,
+      "output_file": "/Users/muzammilmohammad/Projects/the-relay/data/indices/chunks_250.jsonl",
+      "sha256": "51f172fe6148d0f7fce5ec50c8e7f3af8bf8f08be3682ba87ea366fecf314905",
+      "total_chunks": 405,
+      "chunks_per_paper": {
+        "1706.03762v7": 40,
+        "2410.00037v1": 210,
+        "2507.07955v2": 155
+      },
+      "min_tokens": 3,
+      "max_tokens": 250,
+      "mean_tokens": 200.64,
+      "oversized_split_chunks": 82
+    },
+    "500": {
+      "chunk_size_target": 500,
+      "output_file": "/Users/muzammilmohammad/Projects/the-relay/data/indices/chunks_500.jsonl",
+      "sha256": "25a5bd087506bfe7348195c46308aa4985266d4526df5fad5e9e9c3508b478cd",
+      "total_chunks": 199,
+      "chunks_per_paper": {
+        "1706.03762v7": 22,
+        "2410.00037v1": 98,
+        "2507.07955v2": 79
+      },
+      "min_tokens": 3,
+      "max_tokens": 500,
+      "mean_tokens": 408.33,
+      "oversized_split_chunks": 15
+    }
+  }
+}

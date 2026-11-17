@@ -1,0 +1,18 @@
+..............................................................           [100%]
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:488
+<frozen importlib._bootstrap>:488
+tests/test_extraction.py::test_missing_in_text_arxiv_stamp_rejected
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:488
+<frozen importlib._bootstrap>:488
+tests/test_extraction.py::test_missing_in_text_arxiv_stamp_rejected
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+62 passed, 7 warnings in 75.00s (0:01:15)
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

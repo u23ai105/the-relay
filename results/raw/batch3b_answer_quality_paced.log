@@ -1,0 +1,14 @@
+{"timestamp": "2026-11-13T09:18:09.498Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 1/15: setting=250tok_4to4_rerank_no question=q01"}
+{"timestamp": "2026-11-13T09:19:17.279Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 2/15: setting=250tok_4to4_rerank_no question=q04"}
+{"timestamp": "2026-11-13T09:20:24.127Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 3/15: setting=250tok_4to4_rerank_no question=q07"}
+{"timestamp": "2026-11-13T09:21:31.761Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 4/15: setting=250tok_4to4_rerank_no question=q10"}
+{"timestamp": "2026-11-13T09:22:39.116Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 5/15: setting=250tok_4to4_rerank_no question=q13"}
+{"timestamp": "2026-11-13T09:23:46.573Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 6/15: setting=500tok_4to4_rerank_no question=q02"}
+{"timestamp": "2026-11-13T09:24:54.755Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 7/15: setting=500tok_4to4_rerank_no question=q05"}
+{"timestamp": "2026-11-13T09:26:02.347Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 8/15: setting=500tok_4to4_rerank_no question=q08"}
+{"timestamp": "2026-11-13T09:27:09.425Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 9/15: setting=500tok_4to4_rerank_no question=q11"}
+{"timestamp": "2026-11-13T09:28:17.459Z", "level": "INFO", "logger": "answer_quality_eval", "message": "Running 10/15: setting=500tok_4to4_rerank_no question=q14"}
+{"timestamp": "2026-11-13T09:28:19.356Z", "level": "ERROR", "logger": "answer_quality_eval", "message": "Provider returned HTTP 429. Stopping immediately; no further questions will be sent."}
+Answer-quality CSV: /Users/muzammilmohammad/Projects/the-relay/results/raw/answer_quality_20261113T091809Z.csv
+Answer-quality JSON: /Users/muzammilmohammad/Projects/the-relay/results/raw/answer_quality_20261113T091809Z.json
+Completed 10/15 logical requests; stop_reason=stopped_on_http_429_no_retry

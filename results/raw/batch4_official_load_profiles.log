@@ -1,0 +1,20 @@
+{"timestamp": "2026-11-13T09:09:50.989Z", "level": "INFO", "logger": "required_load_profiles", "message": "Starting steady: requests=12 interval_s=2.0 concurrency=5 rpm=1000000 tpd=1000000000"}
+{"timestamp": "2026-11-13T09:10:13.325Z", "level": "INFO", "logger": "required_load_profiles", "message": "steady complete: 12/12 successful, offered 32.71 requests/min, duration 22.34s"}
+{"timestamp": "2026-11-13T09:10:13.382Z", "level": "INFO", "logger": "required_load_profiles", "message": "Starting burst: requests=24 interval_s=0.01 concurrency=3 rpm=1000000 tpd=1000000000"}
+{"timestamp": "2026-11-13T09:10:16.144Z", "level": "INFO", "logger": "required_load_profiles", "message": "burst complete: 24/24 successful, offered 5976.18 requests/min, duration 2.76s"}
+{"timestamp": "2026-11-13T09:10:16.192Z", "level": "INFO", "logger": "required_load_profiles", "message": "Starting sustained_overload: requests=40 interval_s=0.2 concurrency=2 rpm=1000000 tpd=1000000000"}
+{"timestamp": "2026-11-13T09:10:24.348Z", "level": "INFO", "logger": "required_load_profiles", "message": "sustained_overload complete: 40/40 successful, offered 306.51 requests/min, duration 8.16s"}
+{"timestamp": "2026-11-13T09:10:24.398Z", "level": "INFO", "logger": "required_load_profiles", "message": "Starting per_minute_limit_halved: requests=24 interval_s=0.01 concurrency=10 rpm=15 tpd=1000000000"}
+{"timestamp": "2026-11-13T09:10:24.864Z", "level": "INFO", "logger": "required_load_profiles", "message": "per_minute_limit_halved complete: 0/24 successful, offered 6095.56 requests/min, duration 0.47s"}
+{"timestamp": "2026-11-13T09:10:24.907Z", "level": "INFO", "logger": "required_load_profiles", "message": "Starting daily_budget_exhausted: requests=8 interval_s=0.01 concurrency=10 rpm=1000000 tpd=1"}
+{"timestamp": "2026-11-13T09:10:24.986Z", "level": "INFO", "logger": "required_load_profiles", "message": "daily_budget_exhausted complete: 0/8 successful, offered 6397.85 requests/min, duration 0.08s"}
+
+Official profile CSV: /Users/muzammilmohammad/Projects/the-relay/results/raw/official_profiles_20261113T090950Z.csv
+Official profile JSON: /Users/muzammilmohammad/Projects/the-relay/results/raw/official_profiles_20261113T090950Z.json
+
+Scenario summary:
+steady: 12/12 ok | rate-limited=0 | timeout=0 | offered=32.71/min | duration=22.34s
+burst: 24/24 ok | rate-limited=0 | timeout=0 | offered=5976.18/min | duration=2.76s
+sustained_overload: 40/40 ok | rate-limited=0 | timeout=0 | offered=306.51/min | duration=8.16s
+per_minute_limit_halved: 0/24 ok | rate-limited=24 | timeout=0 | offered=6095.56/min | duration=0.47s
+daily_budget_exhausted: 0/8 ok | rate-limited=8 | timeout=0 | offered=6397.85/min | duration=0.08s

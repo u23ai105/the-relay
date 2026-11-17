@@ -1,0 +1,178 @@
+{
+  "created_at": "2026-11-13T09:09:40.931449+00:00",
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "planned_logical_requests": 15,
+  "completed_logical_requests": 2,
+  "retry_strategy": "none",
+  "max_transport_retries": 0,
+  "question_allocation": {
+    "250tok_4to4_rerank_no": [
+      "q01",
+      "q04",
+      "q07",
+      "q10",
+      "q13"
+    ],
+    "500tok_4to4_rerank_no": [
+      "q02",
+      "q05",
+      "q08",
+      "q11",
+      "q14"
+    ],
+    "500tok_12to4_rerank_yes": [
+      "q03",
+      "q06",
+      "q09",
+      "q12",
+      "q15"
+    ]
+  },
+  "per_setting": {
+    "250tok_4to4_rerank_no": {
+      "question_ids_planned": [
+        "q01",
+        "q04",
+        "q07",
+        "q10",
+        "q13"
+      ],
+      "questions_completed": 2,
+      "successful_pipeline_requests": 1,
+      "correct_and_cited_pct": 0.0,
+      "wrong_pct": 50.0,
+      "correctly_refused_pct": 0.0,
+      "infrastructure_failures": 1,
+      "tokens_per_successful_answer_mean": 4340.0,
+      "first_token_ms_success_only": {
+        "n": 1,
+        "p50": 3135.57,
+        "p95": 3135.57
+      },
+      "total_ms_success_only": {
+        "n": 1,
+        "p50": 3492.97,
+        "p95": 3492.97
+      }
+    },
+    "500tok_4to4_rerank_no": {
+      "question_ids_planned": [
+        "q02",
+        "q05",
+        "q08",
+        "q11",
+        "q14"
+      ],
+      "questions_completed": 0,
+      "successful_pipeline_requests": 0,
+      "correct_and_cited_pct": null,
+      "wrong_pct": null,
+      "correctly_refused_pct": null,
+      "infrastructure_failures": 0,
+      "tokens_per_successful_answer_mean": null,
+      "first_token_ms_success_only": {
+        "n": 0,
+        "p50": null,
+        "p95": null
+      },
+      "total_ms_success_only": {
+        "n": 0,
+        "p50": null,
+        "p95": null
+      }
+    },
+    "500tok_12to4_rerank_yes": {
+      "question_ids_planned": [
+        "q03",
+        "q06",
+        "q09",
+        "q12",
+        "q15"
+      ],
+      "questions_completed": 0,
+      "successful_pipeline_requests": 0,
+      "correct_and_cited_pct": null,
+      "wrong_pct": null,
+      "correctly_refused_pct": null,
+      "infrastructure_failures": 0,
+      "tokens_per_successful_answer_mean": null,
+      "first_token_ms_success_only": {
+        "n": 0,
+        "p50": null,
+        "p95": null
+      },
+      "total_ms_success_only": {
+        "n": 0,
+        "p50": null,
+        "p95": null
+      }
+    }
+  },
+  "records": [
+    {
+      "request_id": "answer_quality_20261113T090934Z_250tok_4to4_rerank_no_q01",
+      "scenario": "retrieval_quality",
+      "source": "real",
+      "start_time": 1794560974.979748,
+      "first_token_ms": 3135.5686250608414,
+      "total_ms": 3492.9749965667725,
+      "status": "ok",
+      "retries": 0,
+      "tokens_in": 3725,
+      "tokens_out": 615,
+      "retrieval_setting": "250tok_4to4_rerank_no",
+      "answer_grade": "refused_wrongly",
+      "question_id": "q01",
+      "question": "In Attention Is All You Need (1706.03762v7), how many parallel attention layers (heads) h are used in the base Transformer model, and what are the query/key dimension d_k and model dimension d_model?",
+      "expected_abstained": false,
+      "verified": true,
+      "abstained": true,
+      "answer_text": "Insufficient evidence in the research library: Unable to verify full factual and citation support.",
+      "reference_answer": "The base Transformer uses h = 8 parallel attention layers (heads), d_k = d_v = 64, and d_model = 512 (Section 3.2.2, p. 5; Table 3, p. 9).",
+      "citations": [],
+      "http_status_code": 200,
+      "failure_reason": "verification_failed_twice",
+      "token_accounting_mode": "mixed"
+    },
+    {
+      "request_id": "answer_quality_20261113T090934Z_250tok_4to4_rerank_no_q04",
+      "scenario": "retrieval_quality",
+      "source": "real",
+      "start_time": 1794560979.4778051,
+      "first_token_ms": "",
+      "total_ms": 1449.6948719024658,
+      "status": "rate_limited",
+      "retries": 0,
+      "tokens_in": 1924,
+      "tokens_out": 497,
+      "retrieval_setting": "250tok_4to4_rerank_no",
+      "answer_grade": "",
+      "question_id": "q04",
+      "question": "What value of label smoothing (epsilon_ls) was used during training in Attention Is All You Need, and how did it affect perplexity and BLEU score?",
+      "expected_abstained": false,
+      "verified": false,
+      "abstained": false,
+      "answer_text": "",
+      "reference_answer": "Label smoothing of value epsilon_ls = 0.1 was applied; it hurts perplexity as the model learns to be more unsure, but improves accuracy and BLEU score (Section 5.4 Regularization, p. 8).",
+      "citations": [
+        {
+          "claim_text": "The Transformer model used label smoothing with εls = 0.1, which increased perplexity but improved accuracy and BLEU score.",
+          "chunk_id": "1706.03762v7_s250_c0023",
+          "paper_id": "1706.03762",
+          "arxiv_version": "v7",
+          "page_number": 8,
+          "section_title": "5.4 Regularization",
+          "locator_detail": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.",
+          "paragraph_index": null
+        }
+      ],
+      "http_status_code": 429,
+      "failure_reason": "tpm_limit",
+      "token_accounting_mode": "exact_reported"
+    }
+  ],
+  "stop_reason": "stopped_on_http_429_no_retry",
+  "note": "15 unique authored questions are allocated five per setting. The question sets are distinct, not paired across settings. Each logical RAG request may involve multiple underlying provider calls. Latency percentiles use successful logical requests only.",
+  "csv_path": "/Users/muzammilmohammad/Projects/the-relay/results/raw/answer_quality_20261113T090934Z.csv"
+}

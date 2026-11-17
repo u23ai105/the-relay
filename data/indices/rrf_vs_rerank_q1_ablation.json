@@ -1,0 +1,20 @@
+{
+  "pool_size": 12,
+  "top_k": 4,
+  "rerank_ms": 2.048,
+  "backend_used": "lightweight",
+  "rrf_top_k_ids": [
+    "1706.03762v7_s500_c0006",
+    "1706.03762v7_s500_c0007",
+    "1706.03762v7_s500_c0015",
+    "1706.03762v7_s500_c0008"
+  ],
+  "reranked_top_k_ids": [
+    "1706.03762v7_s500_c0007",
+    "1706.03762v7_s500_c0006",
+    "1706.03762v7_s500_c0015",
+    "1706.03762v7_s500_c0005"
+  ],
+  "order_changed": true,
+  "set_changed": true
+}

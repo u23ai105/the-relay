@@ -1,0 +1,27 @@
+{
+  "provider": "groq",
+  "endpoint": "https://api.groq.com/openai/v1",
+  "model": "openai/gpt-oss-20b",
+  "timestamp": "2026-11-13T09:09:06.278538+00:00",
+  "http_status": 200,
+  "success": true,
+  "response_valid": true,
+  "latency_ms": 830.77,
+  "first_token_ms": 829.69,
+  "status": "ok",
+  "tokens_in": 107,
+  "tokens_out": 53,
+  "token_accounting_mode": "exact_reported",
+  "rate_limit_headers": {
+    "retry-after": "unavailable",
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-remaining-tokens": "7829",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-reset-tokens": "1.282s"
+  },
+  "retry_after": 1282.0,
+  "error_classification": "",
+  "error_message": ""
+}

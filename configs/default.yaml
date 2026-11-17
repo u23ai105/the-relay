@@ -17,7 +17,7 @@ provider:
   max_transport_retries: 2
   retry_base_delay_ms: 400.0
   retry_max_delay_ms: 4000.0
-  # Reference paid-tier pricing for openai/gpt-oss-20b on Groq (\$0.10/1M in, \$0.50/1M out)
+  max_provider_concurrency: 10
   reference_price_per_1m_input_usd: 0.10
   reference_price_per_1m_output_usd: 0.50
 
@@ -43,8 +43,6 @@ chunking:
 retrieval:
   default_setting: "500tok_12to4_rerank_yes"
   rrf_k: 60
-  # "lightweight" uses fast SVD/char+word-ngram L2 dense embeddings & interaction reranker (<25MB RAM).
-  # Set to "sentence_transformers" to use HuggingFace bi-encoder/cross-encoder when installed.
   dense_backend: "lightweight"
   reranker_backend: "lightweight"
   sentence_transformer_model: "sentence-transformers/all-MiniLM-L6-v2"
@@ -81,3 +79,6 @@ pipeline:
   enable_cache: false
   max_correction_attempts: 1
   stream_chunk_chars: 48
+  retry_strategy: "aware"
+  max_local_concurrency: 100
+  max_local_queue_depth: 500

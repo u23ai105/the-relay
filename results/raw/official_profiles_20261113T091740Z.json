@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-11-13T09:17:53.785127+00:00",
+  "batch_id": "official_profiles_20261113T091740Z",
+  "environment": "local_stateful_benchmark_provider",
+  "source": "stand-in",
+  "retrieval_setting": "500tok_12to4_rerank_yes",
+  "retry_strategy": "none",
+  "scenarios": [
+    {
+      "scenario": "sustained_overload",
+      "description": "80 requests arriving every 0.10 seconds for 8 seconds (10 req/s), with provider concurrency capped at 2",
+      "source": "stand-in",
+      "requests_sent": 80,
+      "scenario_duration_s": 13.4,
+      "load_generation_duration_s": 8.12234,
+      "offered_rate_per_min": 590.96,
+      "success_count": 80,
+      "success_pct": 100.0,
+      "rate_limited_count": 0,
+      "rate_limited_pct": 0.0,
+      "timeout_count": 0,
+      "timeout_pct": 0.0,
+      "error_count": 0,
+      "error_pct": 0.0,
+      "retries_per_request": 0.0,
+      "peak_local_queue": 1,
+      "peak_provider_queue": 44,
+      "peak_queue_length": 44,
+      "peak_in_flight": 2,
+      "tokens_per_successful_answer": 3300.0,
+      "first_token_ms_success_only": {
+        "n": 80,
+        "p50": 5106.01,
+        "p95": 6596.9,
+        "p99": 6701.1
+      },
+      "total_ms_success_only": {
+        "n": 80,
+        "p50": 5113.99,
+        "p95": 6602.47,
+        "p99": 6707.86
+      },
+      "retry_strategy": "none",
+      "quota_mode": "normal_local_caps_disabled_for_isolation",
+      "configured_rpm_cap": 1000000,
+      "configured_tpd_cap": 1000000000,
+      "note": "Traffic shape is controlled by request arrival spacing and stand-in concurrency."
+    }
+  ],
+  "csv_path": "/Users/muzammilmohammad/Projects/the-relay/results/raw/official_profiles_20261113T091740Z.csv",
+  "interpretation": "All five required load profiles run against the local stand-in. No Groq requests are made. RPM and TPD scenarios adjust the local scheduler quota manager and must not be reported as real Groq limits."
+}

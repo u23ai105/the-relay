@@ -1,0 +1,850 @@
+{
+  "timestamp": "2026-11-13T07:53:58.133402+00:00",
+  "run_batch_id": "batch3_corrected_20261113T075123Z",
+  "environment": "stateful-benchmark-provider",
+  "seed_applied": false,
+  "retrieval_setting_used": "500tok_12to4_rerank_yes",
+  "retrieval_setting_rationale": "Inherited configured default (500tok_12to4_rerank_yes) consistently across all 15 runs to stress-test upper-bound context size and reranking latency and preserve comparability with the original 450-request benchmark.",
+  "preserved_original_artifacts": {
+    "load_experiment_report.json": "/Users/muzammilmohammad/Projects/the-relay/results/raw/load_experiment_report_original.json",
+    "load_experiments_results.csv": "/Users/muzammilmohammad/Projects/the-relay/results/raw/load_experiments_results_original.csv"
+  },
+  "output_csv_path": "/Users/muzammilmohammad/Projects/the-relay/results/raw/load_experiments_results_batch3_corrected_20261113T075123Z.csv",
+  "output_report_path": "/Users/muzammilmohammad/Projects/the-relay/results/raw/load_experiment_report_batch3_corrected_20261113T075123Z.json",
+  "total_runs": 15,
+  "runs": [
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s1_baseline_none",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s1_baseline",
+      "description": "Baseline concurrent throughput",
+      "retry_strategy": "none",
+      "fault_injected": null,
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 50,
+      "scenario_timing": {
+        "scenario_start_time": 1794556284.078634,
+        "scenario_load_end_time": 1794556284.0787709,
+        "scenario_completion_time": 1794556285.5860531,
+        "scenario_load_duration_s": 0.000136
+      },
+      "outcomes_transport": {
+        "success_count": 50,
+        "fail_count": 0,
+        "success_rate_pct": 100.0,
+        "client_abandoned": 0,
+        "failure_classifications": {}
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 50,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 0
+      },
+      "latency": {
+        "avg_successful_latency_ms": 1047.6,
+        "median_successful_latency_ms": 1061.59,
+        "p95_successful_latency_ms": 1095.24,
+        "avg_successful_ttft_ms": 1038.08
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 150000,
+        "total_tokens_out": 15000
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 45,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s1_baseline_naive",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s1_baseline",
+      "description": "Baseline concurrent throughput",
+      "retry_strategy": "naive",
+      "fault_injected": null,
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 50,
+      "scenario_timing": {
+        "scenario_start_time": 1794556285.6192188,
+        "scenario_load_end_time": 1794556285.61933,
+        "scenario_completion_time": 1794556286.8675342,
+        "scenario_load_duration_s": 0.000111
+      },
+      "outcomes_transport": {
+        "success_count": 50,
+        "fail_count": 0,
+        "success_rate_pct": 100.0,
+        "client_abandoned": 0,
+        "failure_classifications": {}
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 50,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 0
+      },
+      "latency": {
+        "avg_successful_latency_ms": 1037.21,
+        "median_successful_latency_ms": 1054.42,
+        "p95_successful_latency_ms": 1083.07,
+        "avg_successful_ttft_ms": 1032.84
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 150000,
+        "total_tokens_out": 15000
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 42,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s1_baseline_aware",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s1_baseline",
+      "description": "Baseline concurrent throughput",
+      "retry_strategy": "aware",
+      "fault_injected": null,
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 50,
+      "scenario_timing": {
+        "scenario_start_time": 1794556286.9008698,
+        "scenario_load_end_time": 1794556286.900973,
+        "scenario_completion_time": 1794556288.1513228,
+        "scenario_load_duration_s": 0.000103
+      },
+      "outcomes_transport": {
+        "success_count": 50,
+        "fail_count": 0,
+        "success_rate_pct": 100.0,
+        "client_abandoned": 0,
+        "failure_classifications": {}
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 50,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 0
+      },
+      "latency": {
+        "avg_successful_latency_ms": 1031.78,
+        "median_successful_latency_ms": 1053.27,
+        "p95_successful_latency_ms": 1086.38,
+        "avg_successful_ttft_ms": 1027.11
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 150000,
+        "total_tokens_out": 15000
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 38,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s2_rpm_none",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s2_rpm",
+      "description": "Heavy RPM contention",
+      "retry_strategy": "none",
+      "fault_injected": "429_rpm",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 50,
+      "scenario_timing": {
+        "scenario_start_time": 1794556288.184831,
+        "scenario_load_end_time": 1794556288.184912,
+        "scenario_completion_time": 1794556288.587462,
+        "scenario_load_duration_s": 8.2e-05
+      },
+      "outcomes_transport": {
+        "success_count": 0,
+        "fail_count": 50,
+        "success_rate_pct": 0.0,
+        "client_abandoned": 0,
+        "failure_classifications": {
+          "rpm_limit": 50
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 0,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 50
+      },
+      "latency": {
+        "avg_successful_latency_ms": null,
+        "median_successful_latency_ms": null,
+        "p95_successful_latency_ms": null,
+        "avg_successful_ttft_ms": null
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 15000,
+        "total_tokens_out": 1500
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 35,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s2_rpm_naive",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s2_rpm",
+      "description": "Heavy RPM contention",
+      "retry_strategy": "naive",
+      "fault_injected": "429_rpm",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 50,
+      "scenario_timing": {
+        "scenario_start_time": 1794556288.616391,
+        "scenario_load_end_time": 1794556288.616489,
+        "scenario_completion_time": 1794556329.209895,
+        "scenario_load_duration_s": 9.7e-05
+      },
+      "outcomes_transport": {
+        "success_count": 18,
+        "fail_count": 32,
+        "success_rate_pct": 36.0,
+        "client_abandoned": 0,
+        "failure_classifications": {
+          "rpm_limit": 32
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 18,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 32
+      },
+      "latency": {
+        "avg_successful_latency_ms": 27611.74,
+        "median_successful_latency_ms": 30373.33,
+        "p95_successful_latency_ms": 40530.64,
+        "avg_successful_ttft_ms": 27609.19
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 113,
+        "avg_retries_per_request": 2.26,
+        "total_tokens_in": 63000,
+        "total_tokens_out": 6300
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 35,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s2_rpm_aware",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s2_rpm",
+      "description": "Heavy RPM contention",
+      "retry_strategy": "aware",
+      "fault_injected": "429_rpm",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 50,
+      "scenario_timing": {
+        "scenario_start_time": 1794556329.266377,
+        "scenario_load_end_time": 1794556329.266521,
+        "scenario_completion_time": 1794556359.9360871,
+        "scenario_load_duration_s": 0.000144
+      },
+      "outcomes_transport": {
+        "success_count": 20,
+        "fail_count": 30,
+        "success_rate_pct": 40.0,
+        "client_abandoned": 0,
+        "failure_classifications": {
+          "rpm_limit": 30
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 20,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 30
+      },
+      "latency": {
+        "avg_successful_latency_ms": 20478.44,
+        "median_successful_latency_ms": 20462.26,
+        "p95_successful_latency_ms": 30607.37,
+        "avg_successful_ttft_ms": 20474.6
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 84,
+        "avg_retries_per_request": 1.68,
+        "total_tokens_in": 60000,
+        "total_tokens_out": 6000
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 35,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s3_disconnect_none",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s3_disconnect",
+      "description": "Mid-stream disconnects",
+      "retry_strategy": "none",
+      "fault_injected": "disconnect_mid_stream",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 20,
+      "scenario_timing": {
+        "scenario_start_time": 1794556359.977153,
+        "scenario_load_end_time": 1794556359.977201,
+        "scenario_completion_time": 1794556360.2250812,
+        "scenario_load_duration_s": 4.8e-05
+      },
+      "outcomes_transport": {
+        "success_count": 0,
+        "fail_count": 20,
+        "success_rate_pct": 0.0,
+        "client_abandoned": 0,
+        "failure_classifications": {
+          "disconnect_mid_stream": 20
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 0,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 20
+      },
+      "latency": {
+        "avg_successful_latency_ms": null,
+        "median_successful_latency_ms": null,
+        "p95_successful_latency_ms": null,
+        "avg_successful_ttft_ms": null
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 52340,
+        "total_tokens_out": 340
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 5,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s3_disconnect_naive",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s3_disconnect",
+      "description": "Mid-stream disconnects",
+      "retry_strategy": "naive",
+      "fault_injected": "disconnect_mid_stream",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 20,
+      "scenario_timing": {
+        "scenario_start_time": 1794556360.258938,
+        "scenario_load_end_time": 1794556360.258987,
+        "scenario_completion_time": 1794556361.367549,
+        "scenario_load_duration_s": 4.9e-05
+      },
+      "outcomes_transport": {
+        "success_count": 20,
+        "fail_count": 0,
+        "success_rate_pct": 100.0,
+        "client_abandoned": 0,
+        "failure_classifications": {}
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 20,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 0
+      },
+      "latency": {
+        "avg_successful_latency_ms": 948.71,
+        "median_successful_latency_ms": 929.75,
+        "p95_successful_latency_ms": 1039.52,
+        "avg_successful_ttft_ms": 946.57
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 20,
+        "avg_retries_per_request": 1.0,
+        "total_tokens_in": 112340,
+        "total_tokens_out": 6340
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 7,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s3_disconnect_aware",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s3_disconnect",
+      "description": "Mid-stream disconnects",
+      "retry_strategy": "aware",
+      "fault_injected": "disconnect_mid_stream",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 20,
+      "scenario_timing": {
+        "scenario_start_time": 1794556361.409081,
+        "scenario_load_end_time": 1794556361.409136,
+        "scenario_completion_time": 1794556362.5105448,
+        "scenario_load_duration_s": 5.5e-05
+      },
+      "outcomes_transport": {
+        "success_count": 20,
+        "fail_count": 0,
+        "success_rate_pct": 100.0,
+        "client_abandoned": 0,
+        "failure_classifications": {}
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 20,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 0
+      },
+      "latency": {
+        "avg_successful_latency_ms": 946.88,
+        "median_successful_latency_ms": 939.37,
+        "p95_successful_latency_ms": 1022.81,
+        "avg_successful_ttft_ms": 944.19
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 20,
+        "avg_retries_per_request": 1.0,
+        "total_tokens_in": 112340,
+        "total_tokens_out": 6340
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 7,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s4_tpd_none",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s4_tpd",
+      "description": "Daily token quota exhaustion",
+      "retry_strategy": "none",
+      "fault_injected": "429_tpd",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 10,
+      "scenario_timing": {
+        "scenario_start_time": 1794556362.551347,
+        "scenario_load_end_time": 1794556362.55137,
+        "scenario_completion_time": 1794556362.604973,
+        "scenario_load_duration_s": 2.3e-05
+      },
+      "outcomes_transport": {
+        "success_count": 0,
+        "fail_count": 10,
+        "success_rate_pct": 0.0,
+        "client_abandoned": 0,
+        "failure_classifications": {
+          "tpd_limit": 10
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 0,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 10
+      },
+      "latency": {
+        "avg_successful_latency_ms": null,
+        "median_successful_latency_ms": null,
+        "p95_successful_latency_ms": null,
+        "avg_successful_ttft_ms": null
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 0,
+        "total_tokens_out": 0
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 1,
+        "peak_in_flight": 10,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s4_tpd_naive",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s4_tpd",
+      "description": "Daily token quota exhaustion",
+      "retry_strategy": "naive",
+      "fault_injected": "429_tpd",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 10,
+      "scenario_timing": {
+        "scenario_start_time": 1794556362.6295419,
+        "scenario_load_end_time": 1794556362.629569,
+        "scenario_completion_time": 1794556362.677799,
+        "scenario_load_duration_s": 2.8e-05
+      },
+      "outcomes_transport": {
+        "success_count": 0,
+        "fail_count": 10,
+        "success_rate_pct": 0.0,
+        "client_abandoned": 0,
+        "failure_classifications": {
+          "tpd_limit": 10
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 0,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 10
+      },
+      "latency": {
+        "avg_successful_latency_ms": null,
+        "median_successful_latency_ms": null,
+        "p95_successful_latency_ms": null,
+        "avg_successful_ttft_ms": null
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 0,
+        "total_tokens_out": 0
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 1,
+        "peak_in_flight": 10,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s4_tpd_aware",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s4_tpd",
+      "description": "Daily token quota exhaustion",
+      "retry_strategy": "aware",
+      "fault_injected": "429_tpd",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 10,
+      "scenario_timing": {
+        "scenario_start_time": 1794556362.702584,
+        "scenario_load_end_time": 1794556362.702615,
+        "scenario_completion_time": 1794556362.752633,
+        "scenario_load_duration_s": 3.2e-05
+      },
+      "outcomes_transport": {
+        "success_count": 0,
+        "fail_count": 10,
+        "success_rate_pct": 0.0,
+        "client_abandoned": 0,
+        "failure_classifications": {
+          "tpd_limit": 10
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 0,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 10
+      },
+      "latency": {
+        "avg_successful_latency_ms": null,
+        "median_successful_latency_ms": null,
+        "p95_successful_latency_ms": null,
+        "avg_successful_ttft_ms": null
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 0,
+        "total_tokens_out": 0
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 1,
+        "peak_in_flight": 10,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s5_timeout_none",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s5_timeout",
+      "description": "Slow provider / high TTFT",
+      "retry_strategy": "none",
+      "fault_injected": "timeout_ttft",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 20,
+      "scenario_timing": {
+        "scenario_start_time": 1794556362.7775621,
+        "scenario_load_end_time": 1794556362.777597,
+        "scenario_completion_time": 1794556387.848381,
+        "scenario_load_duration_s": 3.5e-05
+      },
+      "outcomes_transport": {
+        "success_count": 0,
+        "fail_count": 20,
+        "success_rate_pct": 0.0,
+        "client_abandoned": 20,
+        "failure_classifications": {
+          "ttft_timeout": 15,
+          "request_deadline_exceeded": 5
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 0,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 20
+      },
+      "latency": {
+        "avg_successful_latency_ms": null,
+        "median_successful_latency_ms": null,
+        "p95_successful_latency_ms": null,
+        "avg_successful_ttft_ms": null
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 52340,
+        "total_tokens_out": 0
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 5,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s5_timeout_naive",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s5_timeout",
+      "description": "Slow provider / high TTFT",
+      "retry_strategy": "naive",
+      "fault_injected": "timeout_ttft",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 20,
+      "scenario_timing": {
+        "scenario_start_time": 1794556387.904174,
+        "scenario_load_end_time": 1794556387.9042351,
+        "scenario_completion_time": 1794556412.983994,
+        "scenario_load_duration_s": 6e-05
+      },
+      "outcomes_transport": {
+        "success_count": 0,
+        "fail_count": 20,
+        "success_rate_pct": 0.0,
+        "client_abandoned": 20,
+        "failure_classifications": {
+          "queue_expired_deadline": 5,
+          "request_deadline_exceeded": 15
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 0,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 20
+      },
+      "latency": {
+        "avg_successful_latency_ms": null,
+        "median_successful_latency_ms": null,
+        "p95_successful_latency_ms": null,
+        "avg_successful_ttft_ms": null
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 15,
+        "avg_retries_per_request": 0.75,
+        "total_tokens_in": 78510,
+        "total_tokens_out": 0
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 5,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    },
+    {
+      "run_id": "exp_batch3_corrected_20261113T075123Z_s5_timeout_aware",
+      "run_batch_id": "batch3_corrected_20261113T075123Z",
+      "scenario": "s5_timeout",
+      "description": "Slow provider / high TTFT",
+      "retry_strategy": "aware",
+      "fault_injected": "timeout_ttft",
+      "retrieval_setting": "500tok_12to4_rerank_yes",
+      "provider_concurrency_configured": 15,
+      "local_concurrency_configured": 100,
+      "request_count": 20,
+      "scenario_timing": {
+        "scenario_start_time": 1794556413.038977,
+        "scenario_load_end_time": 1794556413.03904,
+        "scenario_completion_time": 1794556438.1169999,
+        "scenario_load_duration_s": 6.4e-05
+      },
+      "outcomes_transport": {
+        "success_count": 0,
+        "fail_count": 20,
+        "success_rate_pct": 0.0,
+        "client_abandoned": 20,
+        "failure_classifications": {
+          "ttft_timeout": 15,
+          "request_deadline_exceeded": 5
+        }
+      },
+      "outcomes_answer_quality": {
+        "correct_answer": 0,
+        "wrong_answer": 0,
+        "correct_refusal": 0,
+        "wrong_refusal": 0,
+        "ungraded_or_failed": 20
+      },
+      "latency": {
+        "avg_successful_latency_ms": null,
+        "median_successful_latency_ms": null,
+        "p95_successful_latency_ms": null,
+        "avg_successful_ttft_ms": null
+      },
+      "retries_and_tokens": {
+        "total_transport_retries": 0,
+        "avg_retries_per_request": 0.0,
+        "total_tokens_in": 52340,
+        "total_tokens_out": 0
+      },
+      "scheduler_metrics": {
+        "peak_local_queue": 1,
+        "peak_provider_queue": 5,
+        "peak_in_flight": 15,
+        "final_state": {
+          "local_queue_depth": 0,
+          "provider_queue_depth": 0,
+          "in_flight": 0
+        }
+      }
+    }
+  ]
+}

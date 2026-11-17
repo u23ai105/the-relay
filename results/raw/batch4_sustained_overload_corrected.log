@@ -1,0 +1,8 @@
+{"timestamp": "2026-11-13T09:17:40.373Z", "level": "INFO", "logger": "required_load_profiles", "message": "Starting sustained_overload: requests=80 interval_s=0.1 concurrency=2 rpm=1000000 tpd=1000000000"}
+{"timestamp": "2026-11-13T09:17:53.774Z", "level": "INFO", "logger": "required_load_profiles", "message": "sustained_overload complete: 80/80 successful, offered 590.96 requests/min, duration 13.40s"}
+
+Official profile CSV: /Users/muzammilmohammad/Projects/the-relay/results/raw/official_profiles_20261113T091740Z.csv
+Official profile JSON: /Users/muzammilmohammad/Projects/the-relay/results/raw/official_profiles_20261113T091740Z.json
+
+Scenario summary:
+sustained_overload: 80/80 ok | rate-limited=0 | timeout=0 | offered=590.96/min | duration=13.40s

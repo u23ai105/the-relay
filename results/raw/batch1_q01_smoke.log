@@ -1,0 +1,14 @@
+{"timestamp": "2026-11-13T09:06:34.716Z", "level": "INFO", "logger": "run_rag_smoke", "message": "Running Q01 Smoke Test on Benchmark Provider"}
+{"timestamp": "2026-11-13T09:06:35.330Z", "level": "INFO", "logger": "run_rag_smoke", "message": "Pipeline Result Status: ok"}
+{"timestamp": "2026-11-13T09:06:35.331Z", "level": "INFO", "logger": "run_rag_smoke", "message": "Verified Gate Passed: True"}
+{"timestamp": "2026-11-13T09:06:35.331Z", "level": "INFO", "logger": "run_rag_smoke", "message": "Abstained: False"}
+{"timestamp": "2026-11-13T09:06:35.331Z", "level": "INFO", "logger": "run_rag_smoke", "message": "Answer Grade: correct"}
+
+--- Final Verified Streamed Answer ---
+h=8, d_k=64, d_model=512. [Attention Is All You Need (arXiv:1706.03762v7), p.5, 3.2.2 Multi-Head Attention, Paragraph 12, 1706.03762v7_s500_c0007]
+
+Verified Citations:
+- [Attention Is All You Need (arXiv:1706.03762v7), p.5, 3.2.2 Multi-Head Attention, Paragraph 12, 1706.03762v7_s500_c0007]
+--------------------------------
+
+Provider Stages Executed: ['generate', 'verify']

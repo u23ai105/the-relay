@@ -1,0 +1,44 @@
+{
+  "inspected_at": "2026-11-11T17:20:54.234195+00:00",
+  "papers": [
+    {
+      "id": "1706.03762",
+      "version": "v7",
+      "title": "Attention Is All You Need",
+      "filename": "1706.03762v7.pdf",
+      "source_url": "https://arxiv.org/pdf/1706.03762v7",
+      "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+      "size_bytes": 2215244,
+      "page_count": 15,
+      "pdf_readable": true,
+      "version_marker_found": true,
+      "marker_or_preview": "n Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.\narXiv:1706.03762v7  [cs.CL]  2 Aug 2023\n\n1\nIntroduction\nRecurrent neural networks, long short-term memory [13] and gated recurrent [7] neu"
+    },
+    {
+      "id": "2410.00037",
+      "version": "v1",
+      "title": "Moshi: a speech-text foundation model for real-time dialogue",
+      "filename": "2410.00037v1.pdf",
+      "source_url": "https://arxiv.org/pdf/2410.00037v1",
+      "sha256": "a687144cc77bea86b0c60ae800ccb1d3e0816033fa5c7960388fe29a0dbfcfac",
+      "size_bytes": 4694312,
+      "page_count": 66,
+      "pdf_readable": true,
+      "version_marker_found": true,
+      "marker_or_preview": "/moshi.\nKeywords:\nspeech, text, multimodal, foundation, spoken dialogue\n1\narXiv:2410.00037v1  [eess.AS]  17 Sep 2024\n\nMoshi: a speech-text foundation model for real-time dialogue\n1 Introduction\nVoice has provided"
+    },
+    {
+      "id": "2507.07955",
+      "version": "v2",
+      "title": "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling",
+      "filename": "2507.07955v2.pdf",
+      "source_url": "https://arxiv.org/pdf/2507.07955v2",
+      "sha256": "04a2b32e6e82853cfc23c5db132750874a86cde99219ec6f664128f4aa83122f",
+      "size_bytes": 1375282,
+      "page_count": 39,
+      "pdf_readable": true,
+      "version_marker_found": true,
+      "marker_or_preview": "elated work can be found in Appendix A, which is summarized in Table 6.\n1\narXiv:2507.07955v2  [cs.LG]  15 Jul 2025\n\n\u2022 Direct byte-level language modeling with isotropic architectures3 can be improved with efficie"
+    }
+  ]
+}
